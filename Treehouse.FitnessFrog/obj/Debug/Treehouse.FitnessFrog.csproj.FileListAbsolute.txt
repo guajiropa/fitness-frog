@@ -28,7 +28,6 @@ C:\Users\guaji\Documents\SRC\CS\TreeHouse\ASP.NET MVC Forms\Treehouse.FitnessFro
 C:\Users\guaji\Documents\SRC\CS\TreeHouse\ASP.NET MVC Forms\Treehouse.FitnessFrog\bin\System.Web.Webpages.Razor.xml
 C:\Users\guaji\Documents\SRC\CS\TreeHouse\ASP.NET MVC Forms\Treehouse.FitnessFrog\bin\System.Web.Helpers.xml
 C:\Users\guaji\Documents\SRC\CS\TreeHouse\ASP.NET MVC Forms\Treehouse.FitnessFrog\bin\System.Web.Mvc.xml
-C:\Users\guaji\Documents\SRC\CS\TreeHouse\ASP.NET MVC Forms\Treehouse.FitnessFrog\obj\Debug\Treehouse.FitnessFrog.csprojResolveAssemblyReference.cache
 C:\Users\guaji\Documents\SRC\CS\TreeHouse\ASP.NET MVC Forms\Treehouse.FitnessFrog\obj\Debug\Treehouse.FitnessFrog.csproj.CoreCompileInputs.cache
 C:\Users\guaji\Documents\SRC\CS\TreeHouse\ASP.NET MVC Forms\Treehouse.FitnessFrog\obj\Debug\Treehouse.FitnessFrog.dll
 C:\Users\guaji\Documents\SRC\CS\TreeHouse\ASP.NET MVC Forms\Treehouse.FitnessFrog\obj\Debug\Treehouse.FitnessFrog.pdb
