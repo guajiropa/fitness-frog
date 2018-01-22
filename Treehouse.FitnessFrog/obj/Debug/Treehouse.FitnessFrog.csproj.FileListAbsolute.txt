@@ -31,4 +31,3 @@ C:\Users\guaji\Documents\SRC\CS\TreeHouse\ASP.NET MVC Forms\Treehouse.FitnessFro
 C:\Users\guaji\Documents\SRC\CS\TreeHouse\ASP.NET MVC Forms\Treehouse.FitnessFrog\obj\Debug\Treehouse.FitnessFrog.csproj.CoreCompileInputs.cache
 C:\Users\guaji\Documents\SRC\CS\TreeHouse\ASP.NET MVC Forms\Treehouse.FitnessFrog\obj\Debug\Treehouse.FitnessFrog.dll
 C:\Users\guaji\Documents\SRC\CS\TreeHouse\ASP.NET MVC Forms\Treehouse.FitnessFrog\obj\Debug\Treehouse.FitnessFrog.pdb
-C:\Users\guaji\Documents\SRC\CS\TreeHouse\ASP.NET MVC Forms\Treehouse.FitnessFrog\obj\Debug\Treehouse.FitnessFrog.csprojResolveAssemblyReference.cache
