@@ -1,8 +1,39 @@
 ﻿@model Treehouse.FitnessFrog.Models.Entry
 
+@* 
+##  AUTHOR      :   Robert James Patterson
+##  FILENAME    :   FitnessFrog/Views/Add.cshtml
+##  SYNOPSIS    :   View for user input of time/type/notes on exercise list on the index page. These are my
+##                  classrom work files on strongly typed, ASP.Net MVC forms using model binding.
+*@
+
 @{
     ViewBag.Title = "Add Entry";
+
+    /*
+    
+    var selectListItems = new[]
+    {
+        new SelectListItem() { Value = "1", Text = "Item 1", Selected = false},
+        new SelectListItem() { Value = "2", Text = "Item 2", Selected = true}
+    };
+
+    */
+
+    var items = new[]
+    {
+        new { Id = 1, Name = "Item 1" },
+        new { Id = 2, Name = "Item 2" }
+    };
+
+    var selectListItems = new SelectList(items, "Id", "Name");
+
 }
+
+@*<select>
+    <option value="1">Item 1</option>
+    <option value="2" selected>Item 2</option>
+</select>*@
 
 <h2>@ViewBag.Title</h2>
 
@@ -12,11 +43,11 @@
         <div class="col-md-6">
             <div class="form-group">
                 @Html.LabelFor(m => m.Date, new { @class = "control-label" })
-                @Html.TextBoxFor(m => m.Date, "{0:d}", new { @class = "form-control"})
+                @Html.TextBoxFor(m => m.Date, "{0:d}", new { @class = "form-control" })
             </div>
             <div class="form-group">
                 @Html.LabelFor(m => m.ActivityId, new { @class = "control-label" })
-                @Html.TextBoxFor(m => m.ActivityId, new { @class = "form-control" })
+                @Html.DropDownListFor(m => m.ActivityId, selectListItems, new { @class = "form-control" })
             </div>
             <div class="form-group">
                 @Html.LabelFor(m => m.Duration, new { @class = "control-label" })

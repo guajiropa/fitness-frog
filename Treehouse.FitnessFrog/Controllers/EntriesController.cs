@@ -1,4 +1,11 @@
-﻿using System;
+﻿/* 
+##  AUTHOR      :   Robert James Patterson
+##  FILENAME    :   FitnessFrog/Controllers/EntriesController.cs
+##  SYNOPSIS    :   Entries Controller file for the Fitness Frog application. These are my
+##                  classrom work files on strongly typed, ASP.Net MVC forms using model binding. 
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -43,7 +50,8 @@ namespace Treehouse.FitnessFrog.Controllers
         {
             var entry = new Entry()
             {
-                Date = DateTime.Today
+                Date = DateTime.Today,
+                ActivityId = 2
             };
 
             return View(entry);
@@ -58,6 +66,9 @@ namespace Treehouse.FitnessFrog.Controllers
 
                 return RedirectToAction("Index");
             }
+
+            entry.ActivityId = 2;
+
             return View(entry);
         }
 
