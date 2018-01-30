@@ -51,8 +51,11 @@ namespace Treehouse.FitnessFrog.Controllers
             var entry = new Entry()
             {
                 Date = DateTime.Today,
-                ActivityId = 2
+                //ActivityId = 2
             };
+
+            ViewBag.ActivitiesSelectListItems = new SelectList(
+                Data.Data.Activities, "Id", "Name");
 
             return View(entry);
         }
@@ -60,6 +63,12 @@ namespace Treehouse.FitnessFrog.Controllers
         [HttpPost]
         public ActionResult Add(Entry entry)
         {
+            if (ModelState.IsValidField("Duration") && entry.Duration <= 0)
+            {
+                ModelState.AddModelError("Duration", 
+                    "Duration field must be greater than '0'.");
+            }
+
             if (ModelState.IsValid)
             {
                 _entriesRepository.AddEntry(entry);
@@ -67,7 +76,8 @@ namespace Treehouse.FitnessFrog.Controllers
                 return RedirectToAction("Index");
             }
 
-            entry.ActivityId = 2;
+            ViewBag.ActivitysSelectListItems = new SelectList(
+                Data.Data.Activities, "Id", "Name");
 
             return View(entry);
         }
